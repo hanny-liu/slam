@@ -1,0 +1,24 @@
+cmake_minimum_required(VERSION 3.13)
+
+PROJECT(homework)
+
+SET(CMAKE_CXX_STANDARD 14)
+
+FIND_PACKAGE(OpenCV REQUIRED)
+
+INCLUDE_DIRECTORIES(${OpenCV_INCLUDE_DIRS})
+
+INCLUDE_DIRECTORIES("/usr/include/eigen3/")
+
+find_package(Sophus REQUIRED)
+
+include_directories(${Sophus_INCLUDE_DIRS})
+
+ADD_EXECUTABLE(computeORB computeORB.cpp)
+TARGET_LINK_LIBRARIES(computeORB ${OpenCV_LIBS})
+
+ADD_EXECUTABLE(E2Rt E2Rt.cpp)
+TARGET_LINK_LIBRARIES(E2Rt ${Sophus_LIBS} ${OpenCV_LIBS})
+
+ADD_EXECUTABLE(GN-BA GN-BA.cpp)
+TARGET_LINK_LIBRARIES(GN-BA ${Sophus_LIB} ${OpenCV_LIBS})

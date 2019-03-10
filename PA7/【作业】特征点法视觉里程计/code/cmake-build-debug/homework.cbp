@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="homework"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\;CMake Files\..\..\..\slambook\;CMake Files\..\..\..\slambook\3rdparty\;CMake Files\..\..\..\slambook\3rdparty\Sophus\;CMake Files\..\..\..\slambook\3rdparty\Sophus\build\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GN-BA">
+				<Option output="/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/GN-BA" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/liuhongwei/workspace/slam/slambook/3rdparty/Sophus"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 GN-BA"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GN-BA/fast">
+				<Option output="/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/GN-BA" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/liuhongwei/workspace/slam/slambook/3rdparty/Sophus"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 GN-BA/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="computeORB">
+				<Option output="/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/computeORB" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/liuhongwei/workspace/slam/slambook/3rdparty/Sophus"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 computeORB"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="computeORB/fast">
+				<Option output="/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/computeORB" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/liuhongwei/workspace/slam/slambook/3rdparty/Sophus"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 computeORB/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="E2Rt">
+				<Option output="/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/E2Rt" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/liuhongwei/workspace/slam/slambook/3rdparty/Sophus"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 E2Rt"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="E2Rt/fast">
+				<Option output="/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/E2Rt" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/liuhongwei/workspace/slam/slambook/3rdparty/Sophus"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 E2Rt/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/E2Rt.cpp">
+			<Option target="E2Rt"/>
+		</Unit>
+		<Unit filename="/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/GN-BA.cpp">
+			<Option target="GN-BA"/>
+		</Unit>
+		<Unit filename="/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/computeORB.cpp">
+			<Option target="computeORB"/>
+		</Unit>
+		<Unit filename="/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/../../../../../../../usr/local/lib/cmake/opencv4/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/../../../../../../../usr/local/lib/cmake/opencv4/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/../../../../../../../usr/local/lib/cmake/opencv4/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/../../../../../../../usr/local/lib/cmake/opencv4/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/../../../slambook/3rdparty/Sophus/build/SophusConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\slambook\3rdparty\Sophus\build\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
