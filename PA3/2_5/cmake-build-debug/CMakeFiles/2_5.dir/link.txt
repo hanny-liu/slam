@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/2_5.dir/main.cpp.o  -o 2_5 

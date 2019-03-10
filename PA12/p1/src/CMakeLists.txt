@@ -1,0 +1,6 @@
+SET(CMAKE_BUILD_TYPE"Release")
+SET(src hello.cpp)
+ADD_LIBRARY(hello SHARED ${src})
+INSTALL(TARGETS hello LIBRARY DESTINATION lib)
+INSTALL(FILES hello.h DESTINATION include)
+
