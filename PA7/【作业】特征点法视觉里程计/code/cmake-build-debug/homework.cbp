@@ -5,7 +5,7 @@
 		<Option title="homework"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\;CMake Files\..\..\..\slambook\;CMake Files\..\..\..\slambook\3rdparty\;CMake Files\..\..\..\slambook\3rdparty\Sophus\;CMake Files\..\..\..\slambook\3rdparty\Sophus\build\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\;CMake Files\..\..\..\..\..\ORB_SLAM2\;CMake Files\..\..\..\..\..\ORB_SLAM2\Pangolin\;CMake Files\..\..\..\..\..\ORB_SLAM2\Pangolin\build\;CMake Files\..\..\..\..\..\ORB_SLAM2\Pangolin\build\src\;CMake Files\..\..\..\slambook\;CMake Files\..\..\..\slambook\3rdparty\;CMake Files\..\..\..\slambook\3rdparty\Sophus\;CMake Files\..\..\..\slambook\3rdparty\Sophus\build\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug"/>
@@ -22,6 +22,62 @@
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ICP">
+				<Option output="/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/ICP" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/liuhongwei/workspace/slam/slambook/3rdparty/Sophus"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/home/liuhongwei/ORB_SLAM2/Pangolin/include"/>
+					<Add directory="/home/liuhongwei/ORB_SLAM2/Pangolin/build/src/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 ICP"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ICP/fast">
+				<Option output="/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/ICP" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/liuhongwei/workspace/slam/slambook/3rdparty/Sophus"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/home/liuhongwei/ORB_SLAM2/Pangolin/include"/>
+					<Add directory="/home/liuhongwei/ORB_SLAM2/Pangolin/build/src/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 ICP/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -46,6 +102,8 @@
 				<Compiler>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/home/liuhongwei/workspace/slam/slambook/3rdparty/Sophus"/>
+					<Add directory="/home/liuhongwei/ORB_SLAM2/Pangolin/include"/>
+					<Add directory="/home/liuhongwei/ORB_SLAM2/Pangolin/build/src/include"/>
 					<Add directory="/usr/local/include/opencv4"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
@@ -72,6 +130,8 @@
 				<Compiler>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/home/liuhongwei/workspace/slam/slambook/3rdparty/Sophus"/>
+					<Add directory="/home/liuhongwei/ORB_SLAM2/Pangolin/include"/>
+					<Add directory="/home/liuhongwei/ORB_SLAM2/Pangolin/build/src/include"/>
 					<Add directory="/usr/local/include/opencv4"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
@@ -98,6 +158,8 @@
 				<Compiler>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/home/liuhongwei/workspace/slam/slambook/3rdparty/Sophus"/>
+					<Add directory="/home/liuhongwei/ORB_SLAM2/Pangolin/include"/>
+					<Add directory="/home/liuhongwei/ORB_SLAM2/Pangolin/build/src/include"/>
 					<Add directory="/usr/local/include/opencv4"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
@@ -124,6 +186,8 @@
 				<Compiler>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/home/liuhongwei/workspace/slam/slambook/3rdparty/Sophus"/>
+					<Add directory="/home/liuhongwei/ORB_SLAM2/Pangolin/include"/>
+					<Add directory="/home/liuhongwei/ORB_SLAM2/Pangolin/build/src/include"/>
 					<Add directory="/usr/local/include/opencv4"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
@@ -150,6 +214,8 @@
 				<Compiler>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/home/liuhongwei/workspace/slam/slambook/3rdparty/Sophus"/>
+					<Add directory="/home/liuhongwei/ORB_SLAM2/Pangolin/include"/>
+					<Add directory="/home/liuhongwei/ORB_SLAM2/Pangolin/build/src/include"/>
 					<Add directory="/usr/local/include/opencv4"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
@@ -176,6 +242,8 @@
 				<Compiler>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/home/liuhongwei/workspace/slam/slambook/3rdparty/Sophus"/>
+					<Add directory="/home/liuhongwei/ORB_SLAM2/Pangolin/include"/>
+					<Add directory="/home/liuhongwei/ORB_SLAM2/Pangolin/build/src/include"/>
 					<Add directory="/usr/local/include/opencv4"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
@@ -200,6 +268,9 @@
 		<Unit filename="/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/GN-BA.cpp">
 			<Option target="GN-BA"/>
 		</Unit>
+		<Unit filename="/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/ICP.cpp">
+			<Option target="ICP"/>
+		</Unit>
 		<Unit filename="/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/computeORB.cpp">
 			<Option target="computeORB"/>
 		</Unit>
@@ -217,6 +288,15 @@
 		</Unit>
 		<Unit filename="/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/../../../../../../../usr/local/lib/cmake/opencv4/OpenCVModules.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/../../../../../ORB_SLAM2/Pangolin/build/src/PangolinConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\ORB_SLAM2\Pangolin\build\src\"/>
+		</Unit>
+		<Unit filename="/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/../../../../../ORB_SLAM2/Pangolin/build/src/PangolinConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\ORB_SLAM2\Pangolin\build\src\"/>
+		</Unit>
+		<Unit filename="/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/../../../../../ORB_SLAM2/Pangolin/build/src/PangolinTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\ORB_SLAM2\Pangolin\build\src\"/>
 		</Unit>
 		<Unit filename="/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/../../../slambook/3rdparty/Sophus/build/SophusConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\slambook\3rdparty\Sophus\build\"/>

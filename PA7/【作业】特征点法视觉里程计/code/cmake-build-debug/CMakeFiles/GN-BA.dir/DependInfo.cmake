@@ -12,6 +12,8 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/eigen3"
   "/home/liuhongwei/workspace/slam/slambook/3rdparty/Sophus"
+  "/home/liuhongwei/ORB_SLAM2/Pangolin/include"
+  "/home/liuhongwei/ORB_SLAM2/Pangolin/build/src/include"
   "/usr/local/include/opencv4"
   )
 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/define.dir/define.cpp.o  -o define 

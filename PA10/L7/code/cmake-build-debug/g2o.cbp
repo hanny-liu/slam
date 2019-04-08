@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="g2o"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\;CMake Files\..\..\..\..\..\g2o\;CMake Files\..\..\..\..\..\g2o\cmake_modules\;CMake Files\..\..\..\..\..\ORB_SLAM2\;CMake Files\..\..\..\..\..\ORB_SLAM2\Pangolin\;CMake Files\..\..\..\..\..\ORB_SLAM2\Pangolin\build\;CMake Files\..\..\..\..\..\ORB_SLAM2\Pangolin\build\src\;CMake Files\..\..\..\slambook\;CMake Files\..\..\..\slambook\3rdparty\;CMake Files\..\..\..\slambook\3rdparty\Sophus\;CMake Files\..\..\..\slambook\3rdparty\Sophus\build\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/liuhongwei/workspace/slam/PA10/L7/code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA10/L7/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA10/L7/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA10/L7/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA10/L7/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/liuhongwei/workspace/slam/PA10/L7/code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA10/L7/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA10/L7/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA10/L7/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA10/L7/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dBA">
+				<Option output="/home/liuhongwei/workspace/slam/PA10/L7/code/cmake-build-debug/dBA" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liuhongwei/workspace/slam/PA10/L7/code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/liuhongwei/workspace/slam/slambook/3rdparty/Sophus"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/home/liuhongwei/ORB_SLAM2/Pangolin/include"/>
+					<Add directory="/home/liuhongwei/ORB_SLAM2/Pangolin/build/src/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA10/L7/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 dBA"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA10/L7/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA10/L7/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA10/L7/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dBA/fast">
+				<Option output="/home/liuhongwei/workspace/slam/PA10/L7/code/cmake-build-debug/dBA" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liuhongwei/workspace/slam/PA10/L7/code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/liuhongwei/workspace/slam/slambook/3rdparty/Sophus"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/home/liuhongwei/ORB_SLAM2/Pangolin/include"/>
+					<Add directory="/home/liuhongwei/ORB_SLAM2/Pangolin/build/src/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA10/L7/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 dBA/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA10/L7/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA10/L7/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA10/L7/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/liuhongwei/workspace/slam/PA10/L7/code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA10/L7/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA10/L7/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA10/L7/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/liuhongwei/workspace/slam/PA10/L7/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/liuhongwei/workspace/slam/PA10/L7/code/directBA.cpp">
+			<Option target="dBA"/>
+		</Unit>
+		<Unit filename="/home/liuhongwei/workspace/slam/PA10/L7/code/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/liuhongwei/workspace/slam/PA10/L7/code/../../../../../../../usr/local/lib/cmake/opencv4/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/liuhongwei/workspace/slam/PA10/L7/code/../../../../../../../usr/local/lib/cmake/opencv4/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/liuhongwei/workspace/slam/PA10/L7/code/../../../../../../../usr/local/lib/cmake/opencv4/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/liuhongwei/workspace/slam/PA10/L7/code/../../../../../../../usr/local/lib/cmake/opencv4/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/liuhongwei/workspace/slam/PA10/L7/code/../../../../../g2o/cmake_modules/FindG2O.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\g2o\cmake_modules\"/>
+		</Unit>
+		<Unit filename="/home/liuhongwei/workspace/slam/PA10/L7/code/../../../../../ORB_SLAM2/Pangolin/build/src/PangolinConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\ORB_SLAM2\Pangolin\build\src\"/>
+		</Unit>
+		<Unit filename="/home/liuhongwei/workspace/slam/PA10/L7/code/../../../../../ORB_SLAM2/Pangolin/build/src/PangolinConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\ORB_SLAM2\Pangolin\build\src\"/>
+		</Unit>
+		<Unit filename="/home/liuhongwei/workspace/slam/PA10/L7/code/../../../../../ORB_SLAM2/Pangolin/build/src/PangolinTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\ORB_SLAM2\Pangolin\build\src\"/>
+		</Unit>
+		<Unit filename="/home/liuhongwei/workspace/slam/PA10/L7/code/../../../slambook/3rdparty/Sophus/build/SophusConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\slambook\3rdparty\Sophus\build\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

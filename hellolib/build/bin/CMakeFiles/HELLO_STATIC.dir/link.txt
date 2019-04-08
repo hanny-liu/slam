@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../include/libHELLO.a  CMakeFiles/HELLO_STATIC.dir/function.o
+/usr/bin/ranlib ../../include/libHELLO.a

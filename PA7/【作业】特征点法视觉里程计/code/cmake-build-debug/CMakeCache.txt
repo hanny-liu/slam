@@ -224,6 +224,9 @@ LIBRARY_OUTPUT_PATH:PATH=
 //The directory containing a CMake configuration file for OpenCV.
 OpenCV_DIR:PATH=/usr/local/lib/cmake/opencv4
 
+//The directory containing a CMake configuration file for Pangolin.
+Pangolin_DIR:PATH=/home/liuhongwei/ORB_SLAM2/Pangolin/build/src
+
 //Path to a program.
 ProcessorCount_cmd_getconf:FILEPATH=/usr/bin/getconf
 
@@ -238,6 +241,9 @@ homework_BINARY_DIR:STATIC=/home/liuhongwei/workspace/slam/PA7/【作业】特�
 
 //Value Computed by CMake
 homework_SOURCE_DIR:STATIC=/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code
+
+//The directory containing a CMake configuration file for sophus.
+sophus_DIR:PATH=sophus_DIR-NOTFOUND
 
 
 ########################

@@ -79,6 +79,7 @@ E2Rt_EXTERNAL_OBJECTS =
 
 E2Rt: CMakeFiles/E2Rt.dir/E2Rt.cpp.o
 E2Rt: CMakeFiles/E2Rt.dir/build.make
+E2Rt: /home/liuhongwei/workspace/slam/slambook/3rdparty/Sophus/build/libSophus.so
 E2Rt: /usr/local/lib/libopencv_stitching.so.4.0.0
 E2Rt: /usr/local/lib/libopencv_video.so.4.0.0
 E2Rt: /usr/local/lib/libopencv_objdetect.so.4.0.0

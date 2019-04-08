@@ -14,11 +14,19 @@ find_package(Sophus REQUIRED)
 
 include_directories(${Sophus_INCLUDE_DIRS})
 
+find_package(Pangolin)
+
+include_directories(${Pangolin_INCLUDE_DIRS})
+
+
 ADD_EXECUTABLE(computeORB computeORB.cpp)
 TARGET_LINK_LIBRARIES(computeORB ${OpenCV_LIBS})
 
 ADD_EXECUTABLE(E2Rt E2Rt.cpp)
-TARGET_LINK_LIBRARIES(E2Rt ${Sophus_LIBS} ${OpenCV_LIBS})
+TARGET_LINK_LIBRARIES(E2Rt ${Sophus_LIBRARIES} ${OpenCV_LIBS})
 
 ADD_EXECUTABLE(GN-BA GN-BA.cpp)
-TARGET_LINK_LIBRARIES(GN-BA ${Sophus_LIB} ${OpenCV_LIBS})
+TARGET_LINK_LIBRARIES(GN-BA ${Sophus_LIBRARIES} ${OpenCV_LIBS})
+
+ADD_EXECUTABLE(ICP ICP.cpp)
+TARGET_LINK_LIBRARIES(ICP ${Sophus_LIBRARIES} ${OpenCV_LIBS} ${Pangolin_LIBRARIES})

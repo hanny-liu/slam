@@ -7,6 +7,9 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "/home/liuhongwei/ORB_SLAM2/Pangolin/build/src/PangolinConfig.cmake"
+  "/home/liuhongwei/ORB_SLAM2/Pangolin/build/src/PangolinConfigVersion.cmake"
+  "/home/liuhongwei/ORB_SLAM2/Pangolin/build/src/PangolinTargets.cmake"
   "../CMakeLists.txt"
   "CMakeFiles/3.13.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.13.2/CMakeCXXCompiler.cmake"
@@ -53,6 +56,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/ICP.dir/DependInfo.cmake"
   "CMakeFiles/GN-BA.dir/DependInfo.cmake"
   "CMakeFiles/computeORB.dir/DependInfo.cmake"
   "CMakeFiles/E2Rt.dir/DependInfo.cmake"

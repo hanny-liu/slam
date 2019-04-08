@@ -112,8 +112,8 @@ void computeAngle(const cv::Mat &image, vector<cv::KeyPoint> &keypoints) {
 	// START YOUR CODE HERE (~7 lines)
         float m01=0;
         float m10=0;
-        int x=(int)kp.pt.x;
-        int y=(int)kp.pt.y;
+        float x=kp.pt.x;
+        float y=kp.pt.y;
 	//首先判断点是否在边缘，即kp的坐标是否小于8或大于
 	if((x-8)>=0&&(x+7)<=image.cols&&(y-8)>=0&&(y+7)<=image.rows)
     {
@@ -400,46 +400,54 @@ void computeORBDesc(const cv::Mat &image, vector<cv::KeyPoint> &keypoints, vecto
     for (auto &kp: keypoints)
     {
         DescType d(256, false);
-        for (int j = 0; j < 256; j++)
-        {//遍历256位比较结果d[i]
-            // START YOUR CODE HERE (~7 lines)
-            d[j] = 0;// if kp goes outside, set d.clear()
-            int x=(int)kp.pt.x;
-            int y=(int)kp.pt.y;
-            //遍历每一个关键点的方向theta
-            if(((x-8)>=0)&&((x+7)<=image.cols)&&((y-8)>=0)&&((y+7)<=image.rows))
-            {
-                for(int i=0;i<=255;i++)
-                {
-                    int x1=x+ORB_pattern[i*4];
-                    int y1=x+ORB_pattern[i*4+1];
-                    int x2=x+ORB_pattern[i*4+2];
-                    int y2=x+ORB_pattern[i*4+3];
-                    if(x1>=0&&x1<=image.cols&&y1>=0&&y1<=image.rows)
-                        if(x2>=0&&x2<=image.cols&&y2>=0&&y2<=image.rows)
+        float x=kp.pt.x;
+        float y=kp.pt.y;
+        double t=kp.angle/180*pi;
+        if(((x-8)>=0)&&((x+7)<=image.cols)&&((y-8)>=0)&&((y+7)<=image.rows))
+        {
+            for (int i = 0; i < 256; i++)
+            {//遍历256位比较结果d[i]
+                // START YOUR CODE HERE (~7 lines)
+                //d[j] = 0;// if kp goes outside, set d.clear()
+                //遍历每一个关键点的方向theta
+                float x1 = x + ORB_pattern[i * 4];
+                float y1 = y + ORB_pattern[i * 4 + 1];
+                float x2 = x + ORB_pattern[i * 4 + 2];
+                float y2 = y + ORB_pattern[i * 4 + 3];
+                if (x1 >= 0 && x1 <= image.cols && y1 >= 0 && y1 <= image.rows)
+                    if (x2 >= 0 && x2 <= image.cols && y2 >= 0 && y2 <= image.rows)
+                    {
+                        double up = (x1-x) * cos(t) - (y1-y) * sin(t)+x;
+                        double vp = (x1-x) * sin(t) + (y1-y) * cos(t)+y;
+                        double uq = (x2-x) * cos(t) - (y2-y) * sin(t)+x;
+                        double vq = (x2-x) * sin(t) + (y2-y) * cos(t)+y;
+                        if (up >= 0 && up <= image.cols && vp >= 0 && vp <= image.rows && uq >= 0 && uq <= image.cols && vq >= 0 && vq <= image.rows)
                         {
-                            int up=(int)(x1*cos(kp.angle/180*pi)-y1*sin(kp.angle/180*pi));
-                            int vp=(int)(x1*sin(kp.angle/180*pi)+y1*cos(kp.angle/180*pi));
-                            int uq=(int)(x2*cos(kp.angle/180*pi)-y2*sin(kp.angle/180*pi));
-                            int vq=(int)(x2*sin(kp.angle/180*pi)+y2*cos(kp.angle/180*pi));
-                            if(up>=0&&up<=image.cols&&vp>=0&&vp<=image.rows&&uq>=0&&uq<=image.cols&&vq>=0&&vq<=image.rows)
-                            {
-                                if(image.at<uchar>(vp,up)<image.at<uchar>(vq,uq))
-                                    d[j]= true;
-                                else
-                                    d[j]= false;
-                            } else
-                                d.clear();
-                        }else
+                            if ((image.at<uchar>(vp, up))> (image.at<uchar>(vq, uq)))
+                                    d[i] = 1;
+                            else
+                                    d[i] = 0;
+                                //cout<<image.at<uchar>(vp,up)<<","<<image.at<uchar>(vp,up)<<endl;
+                                //cout<<d[i];
+                        }
+                        else
+                        {
                             d.clear();
+                            break;
+                        }
+                    }
                     else
+                    {
                         d.clear();
-                }
+                        break;
+                    }
+
             }
-            else
-                d.clear();
-	    // END YOUR CODE HERE
+            //cout<<endl;
         }
+        else
+            d.clear();
+	    // END YOUR CODE HERE
         desc.push_back(d);
 
     }
@@ -458,17 +466,17 @@ void bfMatch(const vector<DescType> &desc1, const vector<DescType> &desc2, vecto
     // START YOUR CODE HERE (~12 lines)
     // find matches between desc1 and desc2.
     //计算第一张图片每个描述子对第二张图片的每个描述子的汉明距离
-
+    vector<cv::DMatch> pl;
+    float min_dis=0;
     for(int i=0;i<desc1.size();i++)
-        if(desc1[i].empty())
+    {
+        if (desc1[i].empty())
             continue;
         else
         {
-            vector<cv::DMatch>::iterator dis1;
-            vector<cv::DMatch> pi;
-            for(int j=0,dis=0;j<desc2.size();j++)
+            for (int j = 0, dis = 0; j < desc2.size(); j++)
             {
-                if(desc2[j].empty())
+                if (desc2[j].empty())
                     continue;
                 else
                 {
@@ -477,38 +485,59 @@ void bfMatch(const vector<DescType> &desc1, const vector<DescType> &desc2, vecto
                         if (desc1[i][k] != desc2[j][k])
                             dis++;
                     }
-                    pi.emplace_back(i,j,dis);
+                        pl.emplace_back(i, j, dis);
+                    dis = 0;
                 }
-
             }
-            for(auto m=pi.begin();m!=pi.end();m++)
+            float min=pl[0].distance;
+            int j = pl[0].trainIdx;
+            int n=pl[0].queryIdx;
+            for(int k=0;k<pl.size()-1;k++)
             {
-                dis1=m;
-                if(dis1->distance>=(m)->distance&&m->distance<=50)
-                    dis1=m;
-                else if(m->distance>dis1->distance&&(dis1)->distance<=50)
-                    continue;
-                else
+                if(min>pl[k+1].distance)
                 {
-                    dis1= pi.end();
-                    m=pi.end();
+                    min=pl[k+1].distance;
+                    j=pl[k+1].trainIdx;
+                    n=pl[k+1].queryIdx;
                 }
+                else
+                    continue;
             }
-            if(dis1!=pi.end())
-                matches.emplace_back(i,dis1->trainIdx,dis1->distance);
+            if (min <= 50 &&n==i )
+                matches.emplace_back(n, j, min);
             else
                 continue;
-            /*sort(pi.begin(),pi.end());
-            dis1=pi.begin();
-            if(dis1->distance<=50)
-            {
-                cout<<i<<","<<dis1->trainIdx<<","<<dis1->distance<<endl;
-                m=(int)dis1->distance;
-                matches.emplace_back(i,dis1->trainIdx,m);
-            }*/
-
+            pl.clear();
         }
+    }
+        /*for(auto j:pl)
+        {
+            cout<<j.queryIdx<<","<<j.trainIdx<<","<<j.distance<<endl;
+        }*/
 
+        //int n=pl[0].trainIdx;//索引
+        /*for(int m=1;m<=pl.size();m++)//需要比较索引是否相同
+        {
+            if(pl[m-1].queryIdx==pl[m].queryIdx)
+            {
+                if(dis1>pl[m].distance&&pl[m].distance<=100&&pl[m].distance>=30)
+                {
+                    dis1=pl[m].distance;
+                    n=pl[m].trainIdx;
+                }
+            }
+            else
+                matches.emplace_back(i,n,dis1);
+        }
+    }*/
+        /*auto j=matches.begin();
+        for(int i=0;i<matches.size()-1;)
+        {
+            if(matches[i].queryIdx==matches[i+1].queryIdx&&matches[i].trainIdx==matches[i+1].trainIdx)
+                matches.erase(j+i+1);
+            else
+                i++;
+        }*/
     // END YOUR CODE HERE
 
     for (auto &m: matches) {

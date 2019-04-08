@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/include/eigen3 -I/home/liuhongwei/workspace/slam/slambook/3rdparty/Sophus -isystem /usr/local/include/opencv4 
+CXX_INCLUDES = -I/usr/include/eigen3 -I/home/liuhongwei/workspace/slam/slambook/3rdparty/Sophus -I/home/liuhongwei/ORB_SLAM2/Pangolin/include -I/home/liuhongwei/ORB_SLAM2/Pangolin/build/src/include -isystem /usr/local/include/opencv4 
 

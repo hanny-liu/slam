@@ -1,0 +1,3 @@
+/home/liuhongwei/workspace/slam/hello/include/libHELLO.so
+/home/liuhongwei/workspace/slam/hello/include/libHELLO.a
+/home/liuhongwei/workspace/slam/hello/cmake/FindHELLO.cmake

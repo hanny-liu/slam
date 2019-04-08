@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named ICP
+
+# Build rule for target.
+ICP: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ICP
+.PHONY : ICP
+
+# fast build rule for target.
+ICP/fast:
+	$(MAKE) -f CMakeFiles/ICP.dir/build.make CMakeFiles/ICP.dir/build
+.PHONY : ICP/fast
+
+#=============================================================================
 # Target rules for targets named GN-BA
 
 # Build rule for target.
@@ -203,6 +216,33 @@ GN-BA.cpp.s:
 	$(MAKE) -f CMakeFiles/GN-BA.dir/build.make CMakeFiles/GN-BA.dir/GN-BA.cpp.s
 .PHONY : GN-BA.cpp.s
 
+ICP.o: ICP.cpp.o
+
+.PHONY : ICP.o
+
+# target to build an object file
+ICP.cpp.o:
+	$(MAKE) -f CMakeFiles/ICP.dir/build.make CMakeFiles/ICP.dir/ICP.cpp.o
+.PHONY : ICP.cpp.o
+
+ICP.i: ICP.cpp.i
+
+.PHONY : ICP.i
+
+# target to preprocess a source file
+ICP.cpp.i:
+	$(MAKE) -f CMakeFiles/ICP.dir/build.make CMakeFiles/ICP.dir/ICP.cpp.i
+.PHONY : ICP.cpp.i
+
+ICP.s: ICP.cpp.s
+
+.PHONY : ICP.s
+
+# target to generate assembly for a file
+ICP.cpp.s:
+	$(MAKE) -f CMakeFiles/ICP.dir/build.make CMakeFiles/ICP.dir/ICP.cpp.s
+.PHONY : ICP.cpp.s
+
 computeORB.o: computeORB.cpp.o
 
 .PHONY : computeORB.o
@@ -237,6 +277,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... ICP"
 	@echo "... rebuild_cache"
 	@echo "... GN-BA"
 	@echo "... computeORB"
@@ -247,6 +288,9 @@ help:
 	@echo "... GN-BA.o"
 	@echo "... GN-BA.i"
 	@echo "... GN-BA.s"
+	@echo "... ICP.o"
+	@echo "... ICP.i"
+	@echo "... ICP.s"
 	@echo "... computeORB.o"
 	@echo "... computeORB.i"
 	@echo "... computeORB.s"

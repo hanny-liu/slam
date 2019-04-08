@@ -79,6 +79,7 @@ GN__BA_EXTERNAL_OBJECTS =
 
 GN-BA: CMakeFiles/GN-BA.dir/GN-BA.cpp.o
 GN-BA: CMakeFiles/GN-BA.dir/build.make
+GN-BA: /home/liuhongwei/workspace/slam/slambook/3rdparty/Sophus/build/libSophus.so
 GN-BA: /usr/local/lib/libopencv_stitching.so.4.0.0
 GN-BA: /usr/local/lib/libopencv_video.so.4.0.0
 GN-BA: /usr/local/lib/libopencv_objdetect.so.4.0.0

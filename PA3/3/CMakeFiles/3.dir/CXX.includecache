@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/liuhongwei/workspace/slam/PA3/3/main.cpp
+iostream
+-
+cmath
+-
+eigen3/Eigen/Dense
+-
+eigen3/Eigen/Core
+-
+eigen3/Eigen/Geometry
+-
+

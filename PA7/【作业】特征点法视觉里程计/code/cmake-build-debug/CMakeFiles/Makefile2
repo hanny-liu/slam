@@ -65,6 +65,43 @@ CMAKE_SOURCE_DIR = /home/liuhongwei/workspace/slam/PA7/【作业】特征点法�
 CMAKE_BINARY_DIR = /home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug
 
 #=============================================================================
+# Target rules for target CMakeFiles/ICP.dir
+
+# All Build rule for target.
+CMakeFiles/ICP.dir/all:
+	$(MAKE) -f CMakeFiles/ICP.dir/build.make CMakeFiles/ICP.dir/depend
+	$(MAKE) -f CMakeFiles/ICP.dir/build.make CMakeFiles/ICP.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target ICP"
+.PHONY : CMakeFiles/ICP.dir/all
+
+# Include target in all.
+all: CMakeFiles/ICP.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ICP.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ICP.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ICP.dir/rule
+
+# Convenience name for target.
+ICP: CMakeFiles/ICP.dir/rule
+
+.PHONY : ICP
+
+# clean rule for target.
+CMakeFiles/ICP.dir/clean:
+	$(MAKE) -f CMakeFiles/ICP.dir/build.make CMakeFiles/ICP.dir/clean
+.PHONY : CMakeFiles/ICP.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/ICP.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/GN-BA.dir
 
 # All Build rule for target.
@@ -108,7 +145,7 @@ clean: CMakeFiles/GN-BA.dir/clean
 CMakeFiles/computeORB.dir/all:
 	$(MAKE) -f CMakeFiles/computeORB.dir/build.make CMakeFiles/computeORB.dir/depend
 	$(MAKE) -f CMakeFiles/computeORB.dir/build.make CMakeFiles/computeORB.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target computeORB"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liuhongwei/workspace/slam/PA7/【作业】特征点法视觉里程计/code/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target computeORB"
 .PHONY : CMakeFiles/computeORB.dir/all
 
 # Include target in all.
