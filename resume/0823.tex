@@ -1,0 +1,268 @@
+%-------------------------
+% Resume in Latex
+% Author : 孙越
+% Adapted from: Sourabh Bajaj
+% License : MIT
+
+%------------------------
+
+
+% \documentclass[UTF8，10pt]{ctexart}
+%\documentclass[letterpaper,8pt]{article}
+%\documentclass[UTF8]{ctexart}
+%\documentclass[UTF8]{article}
+\documentclass[CJK]{article}
+\usepackage{CJKutf8}%中文
+%\usepackage{ctex}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks,pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{tabu}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage[charter]{mathdesign} % Bitstream Charter
+% \usepackage{newpxtext,newpxmath} % Palatino
+%\usepackage{zh_CN-Adobefonts_external}
+%\usepackage{linespacing_fix}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.50in}
+\addtolength{\evensidemargin}{-0.50in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-9pt}\scshape\raggedright\large%-6%-9
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemNoBullet}[2]{
+  \item[]\small{
+    \hspace{-9pt}\textbf{#1}{: #2 \vspace{-6pt}}%-9,-6
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{0pt}\item[]%行间距 0 -1
+  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \hspace{-10pt}\textbf{#1} & #2 \\
+      \hspace{-10pt}\textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% custom commands
+\newcommand{\shorterSection}[1]{\vspace{-10pt}\section{#1}}
+
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{CJK}{UTF8}{gkai}
+%{UTF8}{gkai}%楷体
+%{gbsn}%中文宋体
+%----------HEADING-----------------
+
+\begin{multicols}{2}
+    \Large{
+        \begin{tabu}{ r }
+            \multirow{3}{1in}{
+                \includegraphics[width=0.7in]{lhw} 
+            }
+        \end{tabu}
+    }
+    
+\end{multicols}
+
+
+\begin{center}
+
+  \small \textbf{\textbf{\href{aptsunny.github.io}{\Large 刘虹蔚Liu HongWei}}} \\  \href{excellentlhw@foxmail.com}{\color{blue}\underline{excellentlhw@foxmail.com}} $\vert$
+  151-1190-5091 $\vert$
+  %LinkedIn: \href{http://abcde.sunyue9572.cn:4000/}{\color{blue}\underline{aptsunny}} $\vert$
+  Github: \href{https://github.com/hanny-liu}{\color{blue}\underline{hanny-liu}} \\
+  \small Institute of Rail Transit in Tongji University,ShangHai,China\\
+\end{center}
+
+%\href{http://abcde.sunyue9572.cn:4000/}{\color{blue}\underline{aptsunny}}
+%-----------EDUCATION-----------------
+
+%~\\
+~\\
+
+\shorterSection{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\large Tongji University}{Shanghai, China}
+      {Automobile Engineering：Elastic wheel structure Design}{Expected May 2020}{
+      %\resumeItemNoBullet{毕业论文}{基于多目标检测与跟踪的实时动态密集客流监测系统}
+      \resumeItemNoBullet{Main course}{data analysis、Matrix theory、C++ programming Design、Data Structures and Algorithms、Multithreading}}
+      \vspace{2pt}
+    \resumeSubheading
+      {\large ChongQing Jiaotong university}{ChongQing, China}
+      {Automobile Engineering：wheel structure Design;  GPA: 4.0/5.0(90/100)}{Aug 2013 - May 2017}
+    %   \resumeItemNoBullet{Relevant Coursework}{Analysis \& Design of Algorithms, Data Structures using C, Operating Systems, Pattern Recognition}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\shorterSection{Skills}
+  \resumeSubHeadingListStart
+  \small
+    \item{
+     \textbf{Languages}{: C++, Matlab, CET6\quad}
+     %\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad
+     \textbf{Technologies}{: Linux, ROS, CMake, Git\quad}
+     \textbf{Libraries}{:Eigen, g2o, Sophus, OpenCV\quad}
+     \textbf{SLAM}{:ORB-SLAM}
+    }
+    %\vspace{-5pt}
+    %\item{
+    % \textbf{Libraries}{: Eigen, g2o, Sophus, OpenCV\quad\quad}%, CUDA
+     %\hfill
+    % \quad\quad\quad\quad\quad\quad\quad\quad\quad
+   %  \textbf{SLAM}{: ORB-SLAM}%, CUDA
+    %}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\shorterSection{Experience}%{你非常熟悉}
+  \resumeSubHeadingListStart
+	\small
+    \resumeSubheading
+      {\large ROBOTICPLUS.AI }{Shanghai,China}
+      {\normalsize Algorithm intern-Works：Robot tiling project}{Apr 2019 - Present}
+      \resumeItemListStart
+        \resumeItem{\normalsize Tile damage contour filling and contour extraction}
+          {During the tiling process, the robotic arm accurately captures the contours of the tiles through the tile images acquired by the camera, and fills the contours of the broken tiles to improve the parallelism and accuracy of the tiles.
+            \begin{itemize}
+                \item Difficulty: \\
+                Since the image contains the contour of one or more tiles, it is necessary to accurately identify each contour and determine whether it belongs to the same tile; due to the limitation of the tiling algorithm, the contour corner is used to determine the position of the tile. Therefore, the tile whose profile is damaged needs to automatically fill the corner to restore the corner position; at the same time, when adjusting the tile parallelism, the exact contour line slope is needed.
+                \item Solutions:\\
+                After filtering the image, the contour is extracted according to the canny edge detection algorithm, and the classification algorithm (k-means) is used to classify the identified contours according to the centroid of the contour coordinates. Later, the classification only classifies the nearest contours into one category instead of The contours conforming to the polygon law are classified into one class. Therefore, it is decided to determine the distance between the end points of each contour. After reaching a certain threshold, it is classified into one class. The fault tolerance rate is 0.98. For the recovery corner point, the Hoff line transformation is mainly combined with ransac. The straight line of the existing contour is extracted, and then the best fitting straight line is selected by ransac according to the straight line fitting error. This method also restores the corner point while improving the contour slope.
+            \end{itemize}
+          }
+        
+          \resumeItem{\normalsize Robot arm hand-eye matrix calibration}
+          { Through the hand-eye calibration algorithm, the relative attitude of the industrial camera and the end of the robot arm is determined, so as to ensure the accuracy of the robot arm tiling.
+            \begin{itemize}
+               % \item Difficulty:\\
+               % 由于相机与机械臂末端的相对姿态未知,无法通过机械臂的内部坐标转换获取相机的世界坐标,也就无法通过视觉图片识别的角点坐标去正确地调整贴砖位置与方向.因此,需要进行手眼矩阵标定.由于标定中间数据及处理方法对标定结果影响极大,所以需要判断标定结果的有限性以及确定最优值.
+                \item %Solutions:\\
+                %利用张正友标定法对海康相机进行相机标定.然后通过控制机械臂运动,记录不同位姿下的末端位姿,同时根据对极几何记录相机位姿.然后分别利用TSAI、Navy、矩阵直积、非线性最小二乘的方法进行求解,计算矩阵范数确定标定误差,选取最优解.
+                The camera is calibrated using the Zhang Zhengyou calibration method. Then, by controlling the movement of the robot arm, the end poses in different poses are recorded, and the camera pose is recorded according to Polar geometry. Then,using  TSAI, Navy, matrix direct product,and nonlinear least squares respectively to solve relative pose between camera and robot arm. According to the calibration error, the optimal solution is selected.
+            \end{itemize}
+          }
+          \resumeItem{\normalsize Robot SLAM}%机器人实时建图
+          {%针对室内贴砖机器人的自主定位导航,与安卓平板端进行通信,建立机器人实时建图和地图列表等功能.
+          Aiming at the autonomous navigation of the indoor tiled robot, it communicates with the Android tablet, and establishes the real-time mapping and map list of the robot.
+            \begin{itemize}
+                \item %结合机器人上的激光传感器,建立机器人实时建图、保存地图、加载地图、删除地图、建立地图列表等功能.利用ROS通信协议,将中间数据传送给安卓端,并显示到平板.
+                Combined with the laser sensor on the robot, the robot builds the map in real time, saves the map, loads the map, deletes the map, and builds the map list and so on. Using the ROS communication protocol, the intermediate data is transmitted to the Android terminal and displayed to the tablet.
+            \end{itemize}
+          }
+      \resumeItemListEnd
+%    \resumeSubheading
+%      {Roadefend 径卫视觉科技（上海）有限公司}{中国, 上海}
+%      {预研中心DMS算法实习生-工作内容：驾驶员监控系统视线追踪（Pupil Tracking）算法开发}{Oct 2018 - Apr 2019}
+%      \resumeItemListStart
+%        \resumeItem{Pupil Tracking}
+%          {DMS领域的视线追踪，通过红外相机得到图像，通过传统图像处理方法对瞳孔中心定位、瞳孔边界关键点检测以及瞳孔椭圆拟合的结果结合最终眼部特征点反投影得到法线向量作为估计视线的角度。}
+%          \begin{itemize}
+%              \item ShuffleNetV2+NCNN的应用,达到0.002ms的30*30像素Patch的分类结果,用于人脸区域检测分类，识别睁闭眼、抽烟等行为。
+%              \item Unet++二分类将眼球边界提取输出并拟合上下眼睑的二次型曲线，首先是用阈值确定眼部瞳孔的连通区域，进行椭圆拟合或是重心法确定瞳孔位置。但实际的连通区域存在孔洞并不能很好地拟合椭圆，进而借鉴了剑桥大学Rainbow Group中使用基于梯度的方法，眼睛特征的暗圆形外观中心点为大多数图像梯度向量相交的点，其反向梯度对每个中心点进行加权。目标函数可以在中心图中累积，从而定位瞳孔中心。
+%              \item Unityeyes项目中提供了输出视线真值的仿真软件，减少了标定数据的难度。项目进行过程我们也搭建了一套采集人眼视线角度标定的场景摄像机，采集数据后进行真值数据的标注工作。
+%          \end{itemize}
+%        % \resumeItem{Camera Calibration}
+%        %   {Designed and developed Twitter client using Fabric SDK}
+%        %\resumeItem{}
+%        %  {Designed and developed Twitter client using Fabric SDK}
+%      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\shorterSection{Projects}%{亮点}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\normalsize Driver fatigue detection system development}
+     {
+        \vspace{-2pt}
+        \begin{itemize}
+            \item Using deep learning key face detection based on deep learning (face detection, face correction), using PNP, RANSAC and other algorithms for head pose estimation, to achieve driver identification, fatigue detection, distraction detection, specific behavior detection Sight line tracking and other functions, and can reliably detect large angle attitudes in the direction of Yaw±90°, Pitch±45° and Roll±45°. I am mainly responsible for the EPNP algorithm scheme for driver's head attitude estimation.
+        \end{itemize}
+     }
+    \resumeSubItem{\normalsize Visual odometer implementation}
+      {
+        \vspace{-5pt}
+        \begin{itemize}
+            \item Using the camera model and minimizing the luminosity error technique, after extracting the FAST key points, the relative pose of the adjacent key frames is obtained according to the nonlinear least squares, that is, the visual odometer of the single layer direct method. Then through the image pyramid, the coordinate-to -fine realizes multi-layer direct method and improves tracking accuracy.
+        \end{itemize}
+	 }
+	\resumeSubItem{\normalsize Monocular camera calibration}
+     {
+        \vspace{-5pt}
+        \begin{itemize}
+            \item According to Zhang Zhengyou's camera calibration method, the image is Gaussian filtered, the FAST corner point is extracted and the RANSAC is used to filter the corner points according to the harris value, and then the pixel coordinates are obtained according to the bilinear difference. According to the homography relationship of the plane mapping,calculate the best homography matrix, and then use nonlinear least squares to solve the optimal internal parameters and distortion coefficient values.
+        \end{itemize}
+     }
+  \resumeSubHeadingListEnd
+  
+%-----------Addtional Experience & Achievements-----------------
+%\shorterSection{Additional Experience \& Achievements}
+ % \resumeSubHeadingListStart
+  %\small
+    % \item{其余的奖项}
+    % \vspace{-5pt}
+   % \item{《对恐怖袭击事件记录数据的量化预测分析》全国研究生数学建模竞赛国家二等奖，面对恐怖事件庞大的数据和标签特征，合理的假设、筛选问题相关的特征、排除冗余数据的影响。对高维数据进行特征提取以及PCA降维，使量化分析更行之有效。}
+    %\vspace{-5pt}
+%    \item{《车辆轨迹数据条件下交通量估计的仿真验证》一作会议论文WTC 2018 EM算法应用，通过对观察期望最大化算法在不同参数条件下的表现，对影响具体时空轨迹指标的驾驶行为参数提出了仿真验证过程中的局限。本研究成果对城市道路交通状态的估计与判别具有一定的参考意义。}
+    
+    % \vspace{-5pt}
+    % \item{本人首先尝试了YOLO等one stage检测器，但是因误检较多，后尝试了Faster RCNN，并加入了DeformableConv增强尺度不变性，OHEM处理难样本。后续针对问题中XXX的特点，提出了YYY的解决办法。}
+    % item{数据竞赛 \textit{Best Microsoft Hack} out of 220 teams at \textbf{HackHarvard 2017}}
+    % \vspace{-5pt}
+    %1:N识别在识别对比库规模在100w级别下，FAR=0.01/100 时达到0.95识别精度；FAR=0.001/100下达到0.85识别精度；（12.30）对是否戴眼镜、化妆、不同表情、小部分遮挡下也能达到上述识别精度；（12.30）
+    %Tracking）多相机标定以及；++deepsegmentation；lightrack；跨相机匹配，openptrack联动，RGBD ，人像解析yolact ce2p 
+    %\item Implemented a message passing protocol using RabbitMQ to broker messages between Google API, ElectronJS, and VS Code 通过深度图降噪，使得深度图清洁无明显噪点
+    %改进MCNN算法实现高密度场景下的基于人群密度图的估计方法，
+    
+    %dream:加速网络前向推理、设备端模型定点化:复杂度<0.5GFLOPS，大小<10MB，ARM上50ms，检测误差5 quantization,熟悉NCNN、MACE等开源模型量化算法库、部署到设备端集成编译测试的方法
+%  \resumeSubHeadingListEnd
+%-------------------------------------------
+\end{CJK}%中文
+\end{document}
