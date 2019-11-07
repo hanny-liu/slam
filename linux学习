@@ -1,0 +1,195 @@
+1.终端:图形终端,命令行终端,远程终端(SSH,VNC)
+2.常见目录介绍:
+/根目录
+/root root用户的主目录
+/home/username 普通用户的主目录
+/etc 配置文件目录
+/bin 命令目录
+/sbin 管理命令目录
+/usr/bin /usr/sbin 系统预装的其他命令
+3.万能帮助命令:
+man帮助
+help帮助:内部命令用 help +命令,外部命令用 命令+"--help".若无法区分是外部命令还是内部命令可以使用type + 命令来确定该命令是外部命令还是内部命令
+info帮助:info +命令,比help详细
+使用网络资源
+4.pwd显示当前的操作目录
+5.cd 更改当前目录
+6.ls查看当前目录的文件
+-l 长格式显示
+-a 显示隐藏文件
+-t 按时间顺序显示
+-r 逆序显示
+-R 递归显示
+7.mkdir -p表示在空白目录可以创建多级目录
+8.rmdir删除已创建目录,只能删除空白目录,目录下有任何文件都无法使用rmdir删除此目录
+  这时,用rm -r可以删除该目录下所有的文件
+9.cp 复制文件
+10.mv :重命名和移动文件
+重命名:mv 文件名  重命名的文件名
+移动文件:mv 文件名 移动的目标路径
+移动文件夹: mv 文件夹 移动目标路径
+11.通配符:通用的匹配符号:*表示当前所有的文件和目录.?匹配一个字符串
+12.文本查看命令:
+cat :文本显示到终端
+head :查看文件开头
+tail:查看文件结尾
+head -5 main.cpp表示显示文件头5行
+tail -5 main.cpp表示显示文件main.cpp尾5行
+wc:统计文件内容信息
+wc -l main.cpp表示显示文件main.cpp有多少行
+13.文件先打包再压缩到磁带中:
+打包:
+tar cf "文件路径+文件名" "打包到的目录路径"
+压缩:
+tar czf "文件名"  "打包到的目录路径"(.tar.gz)
+tar cjf "文件名"  "打包到的目录路径"(.tar.bz2)(压缩速度慢,压缩比例更大)
+解压缩:
+tar xf "文件名" -C "解包到的目录路径"
+tar zxf "文件名" -C "解包到的目录路径"(.tar.gz)
+tar jxf "文件名" -C "解包到的目录路径"(.tar.bz2)
+tar的常用参数:
+c打包
+x解包
+f指定操作类型为文件
+z压缩成gz类型
+j压缩成bz2类型
+
+14.文本编辑器vi:
+多种模式:
+正常模式(nomal-mode)
+i:切换到插入模式
+shift +i:从行首切换到插入模式
+yy:复制一行文本
+p:粘贴一行文本
+dd:删除一行文本
+x:删除一个字符
+r+新字符:替换成新字符
+o:向下添加空行
+shift+o:向上添加空行
+插入模式(insert-mode)
+命令模式(command-mode)
+:set nu:显示行号
+:set nonu:不显示行号
+:w表示保存
+:w "文件名":将目前的文件保存成文件名
+/+"查找的字符":光标在查找的字符上闪烁,按n可查下一个字符
+可视模式(visual-mode)
+v:进入可视模式
+V:行可视模式
+ctrl+v:块可视模式
+
+15.用户与权限管理
+用户管理常用命令:
+useradd:新建用户,useradd +"用户名称"
+userdel:删除用户
+passwd:修改用户密码
+usermod:修改用户属性
+chage:修改用户生命周期
+id 可以验证用户:id +"用户名"
+groupadd:新建用户组
+groupdel:删除用户组
+
+16.切换用户:su - "用户名"
+
+su:切换用户
+su - username 使用login shell方式切换用户
+sudo 以其他用户身份执行命令
+visudo 设置需要使用sudo的用户组
+
+17.用户和用户组配置文件:
+/etc/passwd
+/etc/shadow
+
+18.文件与目录的权限表示方法
+drwxr-xr-x  6 lhw  lhw        4096 9月   8 17:06 笔试准备/
+类型(d)权限 用户(rwx)  用户组(r-x)               文件名
+
+==>>上述说明
+d 表示此文件为目录文件
+rwx 表示文件属主lhw的权限
+r-x 表示文件属组lhw的权限
+r-x 表示其他用户的权限
+
+==>>文件类型的符号:
+- 普通文件
+d 目录文件
+b 块特殊文件:设备
+c 字符特殊文件:终端
+l 符号链接文件:快捷方式
+f 命名管道
+s 套接字文件
+
+==>>字符权限表示方法:
+r 读
+w 写
+x 执行,进入目录
+数字权限表示方法
+r=4
+w=2
+x=1
+
+19 修改文件的权限命令
+chmod 修改文件\目录权限
+-> chmod u+x /tmp/testfile
+--->u(属主) g(属组) o(其他用户)
+--->-:减少权限 +:增加权限 =:设置权限
+-> chmod 755 /tmp/testfile
+chown 更改属主\属组
+更改属主:
+chown 属主名 文件名
+更改属组:
+chown :属组名 文件名
+chgrp 可以单独更改属组,不常用
+chgrp 属组名 文件名
+
+20 echo 显示内容
+echo 123 显示123到屏幕上
+21 cat显示文件内部的内容
+
+22 网络管理
+(1)网络状态查看工具
+a.net-tools
+=>ifconfig
+->显示内容:
+eth0第一块网卡(网络接口),也可能叫做下面的名字
+eno1 板载网卡
+ens33 PCI-E网卡
+enp0s3 无法获取物理信息的PCI-E网卡
+以上不匹配则使用eth0
+->网络接口命名修改
+网卡命名规则受biosdevname和net.ifnames两个参数影响
+编辑/etc/default/grub文件,增加biosdevname=0,net.ifnames=0
+然后在命令行更新:grub2-mkconfig -o /boot/grub2/grub.cfg
+再重启就完成修改了
+=>mii-tool eth0 查看网卡物理连接情况(网线连接状态)
+=>route -n 查看网关
+=>网络配置命令:
+ifconfig <接口> <IP地址>[netmask 子网掩码]
+ifup <接口>启动网卡
+ifdown <接口>关闭网卡
+=>添加网关:
+route add default gw <网关ip>
+route add -host <指定ip> gw <网关ip>
+route add -net<指定网段> netmask<子网掩码> gw <网关ip>
+
+
+23.网络故障排除命令
+ping:当前主机与目标主机网络连接判断,若ping不通可能是网络中断 ,或者是对方有防火墙的情况
+traceroute:当前主机到目标主机的网络状况,经过多少个服务器端,追踪路由
+mtr:同traceroute
+nslookup:域名对应的ip地址
+telnet:在主机连接正常的情况下,判断端口是否连接正常					+  域名(例www.baidu.com)
+tcpdump:分析数据包是否异常
+netstat
+ss
+
+24.软件安装
+软件包管理器:方便软件安装\卸载,解决软件依赖关系的重要工具
+CentOS\RedHat使用yum包管理器,软件安装包格式为rpm
+yum :-q 查询软件包
+     -i 安装软件包
+     -e 卸载软件包
+Debian\Ubuntu使用apt包管理器,软件安装包格式为deb
+
+
+
